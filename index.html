@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="theme1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Calculator" content="Basic calculator that can switch between themes">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body  class="bg-[var(--main-bg)]">
+    
+    <main class="w-full max-w-[601px] mx-auto league-spartan p-[8%] lg:p-[5%] text-[var(--text-light)] font-medium">
+
+        <!-- Theme switch header -->
+        <header class="flex justify-between items-center mb-[10.8%]">
+
+            <!-- logo -->
+            <div class=" text-3xl leading-[24px] ">calc</div>
+
+            <!-- switch block -->
+            <div class="w-[45.3%] flex flex-col items-end">
+
+                <!-- theme labels -->
+                <div class="flex w-[50.5%] text-[12px] justify-between px-[5%] mb-[1.5%]">
+
+                    <span id="themeOne">1</span>
+                    <span id="themeTwo">2</span>
+                    <span id="themeThree">3</span>
+
+                </div>
+
+                <!-- theme switch container -->
+                <div class="w-full flex justify-between gap-x-[19.6%] max-w-[220px] items-center">
+
+                    <span class="text-sm leading-[11px]">THEME</span>
+
+                    <!-- theme switch -->
+                    <div class="themeSwitch w-[50.5%] aspect-[3.0] rounded-xl sm:rounded-3xl bg-[var(--toggle-bg)] grid items-center grid-cols-1 grid-rows-1 relative cursor-pointer">
+                
+                        <!-- switchball -->
+                        <div class="switchBall absolute h-[65%] left-[5%] translate-x-[0%] aspect-square bg-[var(--key-bg-2)] rounded-full"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- output display -->
+        <section class="output-container  font-bold text-4xl p-[7.6%] text-right mb-[6.7%] rounded-xl bg-[var(--screen-bg)]">
+            <div class="output overflow-scroll">
+                399,981
+            </div>
+        </section>
+
+        <!-- input entry -->
+        <section class="input w-full h-auto p-[7.9%] grid gap-[11px] text-[var(--text-dark)]  bg-[var(--toggle-bg)] rounded-xl text-3xl sm:text-4xl font-bold place-items-stretch">
+
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="7">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="8">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="9">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 input-text text-[var(--text-light)]" value="DEL">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="4">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="5">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="6">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="+">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="1">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="2">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="3">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="-">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value=".">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="0">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="/">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="x">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 input-text col-span-2 text-[var(--text-light)]" value="RESET">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 hotKey col-span-2 text-[var(--text-light)]" value="=">
+
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

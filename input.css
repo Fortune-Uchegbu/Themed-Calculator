@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* themes */
+.theme1 {
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+  --key-bg-1: hsl(225, 21%, 49%);
+  --key-shadow-1: hsl(224, 28%, 35%);
+  --key-bg-2: hsl(6, 63%, 50%);
+  --key-shadow-2: hsl(6, 70%, 34%);
+  --key-bg-3: hsl(30, 25%, 89%);
+  --key-shadow-3: hsl(28, 16%, 65%);
+  --text-dark: hsl(221, 14%, 31%);
+  --text-mid: ;
+  --text-light: hsl(0, 0%, 100%);
+}
+
+.theme2 {
+  --main-bg: hsl(0, 0%, 90%);
+  --toggle-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+  --key-bg-1: hsl(185, 42%, 37%);
+  --key-shadow-1: hsl(185, 58%, 25%);
+  --key-bg-2: hsl(25, 98%, 40%);
+  --key-shadow-2: hsl(25, 99%, 27%);
+  --key-bg-3: hsl(45, 7%, 89%);
+  --key-shadow-3: hsl(35, 11%, 61%);
+  --text-dark: hsl(60, 10%, 19%);
+  --text-mid: ;
+  --text-light: hsl(0, 0%, 100%);
+}
+
+.theme3 {
+  --main-bg: hsl(268, 75%, 9%);
+  --toggle-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+  --key-bg-1: hsl(281, 89%, 26%);
+  --key-shadow-1: hsl(285, 91%, 52%);
+  --key-bg-2: hsl(176, 100%, 44%);
+  --key-shadow-2: hsl(177, 92%, 70%);
+  --key-bg-3: hsl(268, 47%, 21%);
+  --key-shadow-3: hsl(290, 70%, 36%);
+  --text-dark: hsl(198, 20%, 13%);
+  --text-mid: hsl(0, 0%, 100%);
+  --text-light: hsl(52, 100%, 62%);
+}
+
+.input{
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.input input[type = button] {
+  background-color: var(--key-bg-3);
+  border-radius: 4px;
+  padding: 11.6%;
+  box-shadow: 0 3px var(--key-shadow-3);
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .input input[type = button] {font-size: 33px;}
+  .input-text {font-size: 25px!important}
+
+}
+
+@media screen and (min-width: 640px) {
+  .input{gap: 20px;}
+  .input input[type = button] {padding: 3% 4%;}
+}
+
+.input-text{
+  font-size: 20px;
+  display: flex;
+  align-items: start;
+  background-color: var(--key-bg-1)!important;
+  box-shadow: 0 3px var(--key-shadow-1)!important;
+}
+
+.hotKey{
+  background-color: var(--key-bg-2)!important;
+  box-shadow: 0 3px var(--key-shadow-2)!important;
+}
+
+.league-spartan {
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  overflow: auto; /* Enables scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+  }
+  
+*::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
