@@ -611,6 +611,9 @@
   .h-auto {
     height: auto;
   }
+  .min-h-10 {
+    min-height: calc(var(--spacing) * 10);
+  }
   .w-\[45\.3\%\] {
     width: 45.3%;
   }
@@ -622,6 +625,12 @@
   }
   .max-w-\[220px\] {
     max-width: 220px;
+  }
+  .max-w-\[500px\] {
+    max-width: 500px;
+  }
+  .max-w-\[560px\] {
+    max-width: 560px;
   }
   .max-w-\[601px\] {
     max-width: 601px;
@@ -675,6 +684,9 @@
   }
   .overflow-scroll {
     overflow: scroll;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -767,29 +779,12 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .hover\:bg-\[var\(--key-bg-2\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--key-bg-2);
-      }
-    }
-  }
   .hover\:brightness-90 {
     &:hover {
       @media (hover: hover) {
         --tw-brightness: brightness(90%);
         filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
       }
-    }
-  }
-  .focus\:bg-\[var\(--key-bg-2\)\] {
-    &:focus {
-      background-color: var(--key-bg-2);
-    }
-  }
-  .focus\:bg-red-600 {
-    &:focus {
-      background-color: var(--color-red-600);
     }
   }
   .active\:h-\[95\%\] {

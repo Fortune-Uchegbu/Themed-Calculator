@@ -14,7 +14,7 @@
 
 <body  class="bg-[var(--main-bg)]">
     
-    <main class="w-full max-w-[601px] mx-auto league-spartan p-[8%] lg:p-[5%] text-[var(--text-light)] font-medium">
+    <main class="w-full max-w-[500px] mx-auto league-spartan p-[8%] lg:p-[5%] text-[var(--text-light)] font-medium">
 
         <!-- Theme switch header -->
         <header class="flex justify-between items-center mb-[10.8%]">
@@ -55,31 +55,31 @@
 
         <!-- output display -->
         <section class="output-container  font-bold text-4xl p-[7.6%] text-right mb-[6.7%] rounded-xl bg-[var(--screen-bg)]">
-            <div class="output overflow-scroll">
-                399,981
+            <div class="output overflow-x-scroll min-h-10 max-w-5000px">
+            
             </div>
         </section>
 
         <!-- input entry -->
         <section class="input w-full h-auto p-[7.9%] grid gap-[11px] text-[var(--text-dark)]  bg-[var(--toggle-bg)] rounded-xl text-3xl sm:text-4xl font-bold place-items-stretch">
 
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="7">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="8">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="9">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 input-text text-[var(--text-light)]" value="DEL">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="4">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="5">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="6">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="+">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="1">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="2">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="3">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="-">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value=".">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="0">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="/">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="x">
-            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 input-text col-span-2 text-[var(--text-light)]" value="RESET">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="7">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="8">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="9">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 input-text text-[var(--text-light)] delete" value="DEL">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="4">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="5">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="6">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 operator" value="+">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="1">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="2">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="3">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 operator" value="-">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 operator" value=".">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75" value="0">
+            <input type="button" class="button hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 operator" value="÷">
+            <input type="button" class="button asterisk hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 operator" value="x">
+            <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 input-text col-span-2 text-[var(--text-light)] reset" value="RESET">
             <input type="button" class="hover:brightness-90 cursor-pointer active:w-[95%] active:h-[95%] active:place-self-center active:brightness-75 hotKey col-span-2 text-[var(--text-light)]" value="=">
 
         </section>

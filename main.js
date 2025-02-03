@@ -2,7 +2,6 @@
 // Get elements involved
 const themeSwitch = document.querySelector('.themeSwitch');
 const switchBall = document.querySelector('.switchBall');
-
 // switching logic
 const switchRect = themeSwitch.getBoundingClientRect(); // get position details of the themeswitch
 themeSwitch.addEventListener('click', (event) => {
@@ -71,4 +70,79 @@ themeSwitch.addEventListener('click', (event) => {
             })
         })
     }
+})
+
+// main calculator logic
+const outputView = document.querySelector('.output');
+
+// user input function
+const buttons = Array.from(document.querySelectorAll('.button'));
+let input = "";
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+
+        const value = button.value;
+
+        // when the input is initially empty
+        if(input == ""){
+            if(button.classList.contains('operator')){}
+            else{
+                input += value;
+                outputView.innerHTML = input;
+            }
+        }
+
+        // when the input already has content
+        else{
+            // when the last input was an operator
+            if(button.classList.contains('operator')){
+                if(input.endsWith("+") || input.endsWith("-") || input.endsWith("X") || input.endsWith("÷") || input.endsWith(".")){}
+                else{
+                    input += value
+                    outputView.innerHTML = input;
+                }
+            }
+
+            else{
+                input += value
+                outputView.innerHTML = input;
+            }
+        }
+        
+    })
+})
+
+// calculate function
+const calc = document.querySelector('.hotKey');
+calc.addEventListener('click', () => {
+    if(input.endsWith("+") || input.endsWith("-") || input.endsWith("X") || input.endsWith("÷") || input.endsWith(".")){}
+
+    else if(input == ""){}
+
+    else{
+        // replace x, ÷ with *, / respectively
+        input = input.replace(/[÷x]/g, (char) => {
+            const replacement = {"x" : "*" , "÷" : "/"}
+            return replacement[char]
+        })   
+
+        //eval calculation
+        const result = eval(input);    
+        outputView.innerHTML = result;
+        input = result.toString();
+    }
+})
+
+// delete functionality
+const del = document.querySelector('.delete');
+del.addEventListener('click', () => {
+    input = input.slice(0, input.length-1);
+    outputView.innerHTML = input;
+})
+
+// reset functionality
+const reset = document.querySelector('.reset');
+reset.addEventListener('click', () => {
+    input = "";
+    outputView.innerHTML = input;
 })
